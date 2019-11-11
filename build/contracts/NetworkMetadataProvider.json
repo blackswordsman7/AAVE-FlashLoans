@@ -1,0 +1,1563 @@
+{
+  "contractName": "NetworkMetadataProvider",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_key",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_key",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getUint",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getBlocksPerYear",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_blocksPerYear",
+          "type": "uint256"
+        }
+      ],
+      "name": "setBlocksPerYear",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getEthereumAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_ethereumAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setEthereumAddress",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_key\",\"type\":\"bytes32\"}],\"name\":\"getAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getBlocksPerYear\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getEthereumAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_key\",\"type\":\"bytes32\"}],\"name\":\"getUint\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_blocksPerYear\",\"type\":\"uint256\"}],\"name\":\"setBlocksPerYear\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_ethereumAddress\",\"type\":\"address\"}],\"name\":\"setEthereumAddress\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/tredg/aave_flash/contracts/configuration/NetworkMetadataProvider.sol\":\"NetworkMetadataProvider\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/tredg/aave_flash/contracts/configuration/AddressStorage.sol\":{\"keccak256\":\"0x2b97c051de99844cb289117d1040624e3e9ed0b4c1bf8e80e1cf50b910f3b880\",\"urls\":[\"bzz-raw://6ad162ef64de739c419b7eff278a8d4e53c7fa83ca3b783914537feced5ef0a7\",\"dweb:/ipfs/QmQDhvu2vZX1PHPk4U8oibYxTXxmGY1K2XnhumJkfQfyN4\"]},\"/C/Users/tredg/aave_flash/contracts/configuration/NetworkMetadataProvider.sol\":{\"keccak256\":\"0xd2e51b68ffcc0043af24a8cff804a1b01124c9c7a3cc0a4b8c19f4e7173aaa67\",\"urls\":[\"bzz-raw://8a8121391985252b17c51e722a9b0f53bd29d18c82755cc3e3d3f09cea131051\",\"dweb:/ipfs/QmcFEAiLRRrD7sMf6e5V7tuAVT76mJbLPozT49bNdLQNtn\"]},\"/C/Users/tredg/aave_flash/contracts/configuration/UintStorage.sol\":{\"keccak256\":\"0x86801c9436c22500a0ea4031f2bc1348f24193c217d67be4477cecd098a38d3c\",\"urls\":[\"bzz-raw://9addc9baff804fe0d97a4e77fdf6b6de25035d48a32ca3b96af600ff176e6ff4\",\"dweb:/ipfs/QmRDL95wYr7snmS6uu8WcEfqJYNsL5B8CK1m7rC7sm6FLA\"]},\"/C/Users/tredg/aave_flash/contracts/interfaces/INetworkMetadataProvider.sol\":{\"keccak256\":\"0xf847089d1a9f6ea11873aaa46c1327f8f5dab7d5e11a8c99cbf45f85a8cbf8bf\",\"urls\":[\"bzz-raw://437e2c94626b2a8bb594d43fc87e6029cb6f44135abdffd9b66cc376cff70571\",\"dweb:/ipfs/QmSfPeRSbbowYznSuBxj22WumJAP1AodrD7TFixNpEbJAm\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506103aa806100206000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c806317bfdd571461006757806321f8a721146100b15780635c85fe811461011f578063741de14814610163578063bd02d0f514610181578063e5fa2b70146101c3575b600080fd5b61006f6101f1565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100dd600480360360208110156100c757600080fd5b8101908080359060200190929190505050610221565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101616004803603602081101561013557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061025e565b005b61016b61028b565b6040518082815260200191505060405180910390f35b6101ad6004803603602081101561019757600080fd5b81019080803590602001909291905050506102bb565b6040518082815260200191505060405180910390f35b6101ef600480360360208110156101d957600080fd5b81019080803590602001909291905050506102d7565b005b600061021c7f455448455245554d5f4144445245535300000000000000000000000000000000610221565b905090565b60006001600083815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050919050565b6102887f455448455245554d5f414444524553530000000000000000000000000000000082610304565b50565b60006102b67f424c4f434b535f5045525f5945415200000000000000000000000000000000006102bb565b905090565b6000806000838152602001908152602001600020549050919050565b6103017f424c4f434b535f5045525f5945415200000000000000000000000000000000008261035a565b50565b806001600084815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b8060008084815260200190815260200160002081905550505056fea265627a7a723158201c42fff59ed0198776c02944a534f816833fc001815ff90686b09c562753cd7764736f6c634300050c0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c806317bfdd571461006757806321f8a721146100b15780635c85fe811461011f578063741de14814610163578063bd02d0f514610181578063e5fa2b70146101c3575b600080fd5b61006f6101f1565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100dd600480360360208110156100c757600080fd5b8101908080359060200190929190505050610221565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101616004803603602081101561013557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061025e565b005b61016b61028b565b6040518082815260200191505060405180910390f35b6101ad6004803603602081101561019757600080fd5b81019080803590602001909291905050506102bb565b6040518082815260200191505060405180910390f35b6101ef600480360360208110156101d957600080fd5b81019080803590602001909291905050506102d7565b005b600061021c7f455448455245554d5f4144445245535300000000000000000000000000000000610221565b905090565b60006001600083815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050919050565b6102887f455448455245554d5f414444524553530000000000000000000000000000000082610304565b50565b60006102b67f424c4f434b535f5045525f5945415200000000000000000000000000000000006102bb565b905090565b6000806000838152602001908152602001600020549050919050565b6103017f424c4f434b535f5045525f5945415200000000000000000000000000000000008261035a565b50565b806001600084815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b8060008084815260200190815260200160002081905550505056fea265627a7a723158201c42fff59ed0198776c02944a534f816833fc001815ff90686b09c562753cd7764736f6c634300050c0032",
+  "sourceMap": "144:850:6:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;144:850:6;;;;;;;",
+  "deployedSourceMap": "144:850:6:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;144:850:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;680:116;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;112:105:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;112:105:3;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;853:136:6;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;853:136:6;;;;;;;;;;;;;;;;;;;:::i;:::-;;379:110;;;:::i;:::-;;;;;;;;;;;;;;;;;;;105:98:7;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;105:98:7;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;546:126:6;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;546:126:6;;;;;;;;;;;;;;;;;:::i;:::-;;680:116;733:7;760:28;771:16;760:10;:28::i;:::-;753:35;;680:116;:::o;112:105:3:-;167:7;194:9;:15;204:4;194:15;;;;;;;;;;;;;;;;;;;;;187:22;;112:105;;;:::o;853:136:6:-;934:47;946:16;964;934:11;:47::i;:::-;853:136;:::o;379:110::-;430:7;457:24;465:15;457:7;:24::i;:::-;450:31;;379:110;:::o;105:98:7:-;157:7;184:5;:11;190:4;184:11;;;;;;;;;;;;177:18;;105:98;;;:::o;546:126:6:-;623:41;632:15;649:14;623:8;:41::i;:::-;546:126;:::o;225:103:3:-;314:6;296:9;:15;306:4;296:15;;;;;;;;;;;;:24;;;;;;;;;;;;;;;;;;225:103;;:::o;211:96:7:-;293:6;279:5;:11;285:4;279:11;;;;;;;;;;;:20;;;;211:96;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../interfaces/INetworkMetadataProvider.sol\";\r\nimport \"./UintStorage.sol\";\r\nimport \"./AddressStorage.sol\";\r\n\r\ncontract NetworkMetadataProvider is INetworkMetadataProvider, UintStorage, AddressStorage {\r\n    bytes32 private constant BLOCKS_PER_YEAR = \"BLOCKS_PER_YEAR\";\r\n    bytes32 private constant ETHEREUM_ADDRESS = \"ETHEREUM_ADDRESS\";\r\n\r\n    function getBlocksPerYear() external view returns (uint256) {\r\n        return getUint(BLOCKS_PER_YEAR);\r\n    }\r\n\r\n    // TODO: add access control rules under DAO\r\n    function setBlocksPerYear(uint256 _blocksPerYear) external {\r\n        return _setUint(BLOCKS_PER_YEAR, _blocksPerYear);\r\n    }\r\n\r\n    function getEthereumAddress() external view returns (address) {\r\n        return getAddress(ETHEREUM_ADDRESS);\r\n    }\r\n\r\n    // TODO: add access control rules under DAO\r\n    function setEthereumAddress(address _ethereumAddress) external {\r\n        return _setAddress(ETHEREUM_ADDRESS, _ethereumAddress);\r\n    }\r\n\r\n}\r\n",
+  "sourcePath": "C:\\Users\\tredg\\aave_flash\\contracts\\configuration\\NetworkMetadataProvider.sol",
+  "ast": {
+    "absolutePath": "/C/Users/tredg/aave_flash/contracts/configuration/NetworkMetadataProvider.sol",
+    "exportedSymbols": {
+      "NetworkMetadataProvider": [
+        1012
+      ]
+    },
+    "id": 1013,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 954,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:6"
+      },
+      {
+        "absolutePath": "/C/Users/tredg/aave_flash/contracts/interfaces/INetworkMetadataProvider.sol",
+        "file": "../interfaces/INetworkMetadataProvider.sol",
+        "id": 955,
+        "nodeType": "ImportDirective",
+        "scope": 1013,
+        "sourceUnit": 1467,
+        "src": "27:52:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tredg/aave_flash/contracts/configuration/UintStorage.sol",
+        "file": "./UintStorage.sol",
+        "id": 956,
+        "nodeType": "ImportDirective",
+        "scope": 1013,
+        "sourceUnit": 1046,
+        "src": "81:27:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tredg/aave_flash/contracts/configuration/AddressStorage.sol",
+        "file": "./AddressStorage.sol",
+        "id": 957,
+        "nodeType": "ImportDirective",
+        "scope": 1013,
+        "sourceUnit": 488,
+        "src": "110:30:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 958,
+              "name": "INetworkMetadataProvider",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1466,
+              "src": "180:24:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_INetworkMetadataProvider_$1466",
+                "typeString": "contract INetworkMetadataProvider"
+              }
+            },
+            "id": 959,
+            "nodeType": "InheritanceSpecifier",
+            "src": "180:24:6"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 960,
+              "name": "UintStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1045,
+              "src": "206:11:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_UintStorage_$1045",
+                "typeString": "contract UintStorage"
+              }
+            },
+            "id": 961,
+            "nodeType": "InheritanceSpecifier",
+            "src": "206:11:6"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 962,
+              "name": "AddressStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 487,
+              "src": "219:14:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AddressStorage_$487",
+                "typeString": "contract AddressStorage"
+              }
+            },
+            "id": 963,
+            "nodeType": "InheritanceSpecifier",
+            "src": "219:14:6"
+          }
+        ],
+        "contractDependencies": [
+          487,
+          1045,
+          1466
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1012,
+        "linearizedBaseContracts": [
+          1012,
+          487,
+          1045,
+          1466
+        ],
+        "name": "NetworkMetadataProvider",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 966,
+            "name": "BLOCKS_PER_YEAR",
+            "nodeType": "VariableDeclaration",
+            "scope": 1012,
+            "src": "241:60:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 964,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "241:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "424c4f434b535f5045525f59454152",
+              "id": 965,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "284:17:6",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_dd9795cff4312d9fffd0d2b8c06e31c1e80060161f168688c608c7f1d210d2fa",
+                "typeString": "literal_string \"BLOCKS_PER_YEAR\""
+              },
+              "value": "BLOCKS_PER_YEAR"
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": true,
+            "id": 969,
+            "name": "ETHEREUM_ADDRESS",
+            "nodeType": "VariableDeclaration",
+            "scope": 1012,
+            "src": "308:62:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 967,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "308:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "455448455245554d5f41444452455353",
+              "id": 968,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "352:18:6",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_f360571fa099fca7e2371ff8715a62086efce0e6eaeaeb308622cdf4ef44b8f2",
+                "typeString": "literal_string \"ETHEREUM_ADDRESS\""
+              },
+              "value": "ETHEREUM_ADDRESS"
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 978,
+              "nodeType": "Block",
+              "src": "439:50:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 975,
+                        "name": "BLOCKS_PER_YEAR",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 966,
+                        "src": "465:15:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 974,
+                      "name": "getUint",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1030,
+                      "src": "457:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_bytes32_$returns$_t_uint256_$",
+                        "typeString": "function (bytes32) view returns (uint256)"
+                      }
+                    },
+                    "id": 976,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "457:24:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 973,
+                  "id": 977,
+                  "nodeType": "Return",
+                  "src": "450:31:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 979,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBlocksPerYear",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 970,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "404:2:6"
+            },
+            "returnParameters": {
+              "id": 973,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 972,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 979,
+                  "src": "430:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 971,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "430:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "429:9:6"
+            },
+            "scope": 1012,
+            "src": "379:110:6",
+            "stateMutability": "view",
+            "superFunction": 1450,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 989,
+              "nodeType": "Block",
+              "src": "605:67:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 985,
+                        "name": "BLOCKS_PER_YEAR",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 966,
+                        "src": "632:15:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 986,
+                        "name": "_blocksPerYear",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 981,
+                        "src": "649:14:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 984,
+                      "name": "_setUint",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1044,
+                      "src": "623:8:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_uint256_$returns$__$",
+                        "typeString": "function (bytes32,uint256)"
+                      }
+                    },
+                    "id": 987,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "623:41:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "functionReturnParameters": 983,
+                  "id": 988,
+                  "nodeType": "Return",
+                  "src": "616:48:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 990,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setBlocksPerYear",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 982,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 981,
+                  "name": "_blocksPerYear",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 990,
+                  "src": "572:22:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 980,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "572:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "571:24:6"
+            },
+            "returnParameters": {
+              "id": 983,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "605:0:6"
+            },
+            "scope": 1012,
+            "src": "546:126:6",
+            "stateMutability": "nonpayable",
+            "superFunction": 1455,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 999,
+              "nodeType": "Block",
+              "src": "742:54:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 996,
+                        "name": "ETHEREUM_ADDRESS",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 969,
+                        "src": "771:16:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 995,
+                      "name": "getAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 472,
+                      "src": "760:10:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_bytes32_$returns$_t_address_$",
+                        "typeString": "function (bytes32) view returns (address)"
+                      }
+                    },
+                    "id": 997,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "760:28:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 994,
+                  "id": 998,
+                  "nodeType": "Return",
+                  "src": "753:35:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1000,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEthereumAddress",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 991,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "707:2:6"
+            },
+            "returnParameters": {
+              "id": 994,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 993,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1000,
+                  "src": "733:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 992,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "733:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "732:9:6"
+            },
+            "scope": 1012,
+            "src": "680:116:6",
+            "stateMutability": "view",
+            "superFunction": 1460,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 1010,
+              "nodeType": "Block",
+              "src": "916:73:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 1006,
+                        "name": "ETHEREUM_ADDRESS",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 969,
+                        "src": "946:16:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 1007,
+                        "name": "_ethereumAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1002,
+                        "src": "964:16:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 1005,
+                      "name": "_setAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 486,
+                      "src": "934:11:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
+                        "typeString": "function (bytes32,address)"
+                      }
+                    },
+                    "id": 1008,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "934:47:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "functionReturnParameters": 1004,
+                  "id": 1009,
+                  "nodeType": "Return",
+                  "src": "927:54:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1011,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setEthereumAddress",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1003,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1002,
+                  "name": "_ethereumAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1011,
+                  "src": "881:24:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1001,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "881:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "880:26:6"
+            },
+            "returnParameters": {
+              "id": 1004,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "916:0:6"
+            },
+            "scope": 1012,
+            "src": "853:136:6",
+            "stateMutability": "nonpayable",
+            "superFunction": 1465,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1013,
+        "src": "144:850:6"
+      }
+    ],
+    "src": "0:996:6"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/tredg/aave_flash/contracts/configuration/NetworkMetadataProvider.sol",
+    "exportedSymbols": {
+      "NetworkMetadataProvider": [
+        1012
+      ]
+    },
+    "id": 1013,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 954,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:6"
+      },
+      {
+        "absolutePath": "/C/Users/tredg/aave_flash/contracts/interfaces/INetworkMetadataProvider.sol",
+        "file": "../interfaces/INetworkMetadataProvider.sol",
+        "id": 955,
+        "nodeType": "ImportDirective",
+        "scope": 1013,
+        "sourceUnit": 1467,
+        "src": "27:52:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tredg/aave_flash/contracts/configuration/UintStorage.sol",
+        "file": "./UintStorage.sol",
+        "id": 956,
+        "nodeType": "ImportDirective",
+        "scope": 1013,
+        "sourceUnit": 1046,
+        "src": "81:27:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tredg/aave_flash/contracts/configuration/AddressStorage.sol",
+        "file": "./AddressStorage.sol",
+        "id": 957,
+        "nodeType": "ImportDirective",
+        "scope": 1013,
+        "sourceUnit": 488,
+        "src": "110:30:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 958,
+              "name": "INetworkMetadataProvider",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1466,
+              "src": "180:24:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_INetworkMetadataProvider_$1466",
+                "typeString": "contract INetworkMetadataProvider"
+              }
+            },
+            "id": 959,
+            "nodeType": "InheritanceSpecifier",
+            "src": "180:24:6"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 960,
+              "name": "UintStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1045,
+              "src": "206:11:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_UintStorage_$1045",
+                "typeString": "contract UintStorage"
+              }
+            },
+            "id": 961,
+            "nodeType": "InheritanceSpecifier",
+            "src": "206:11:6"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 962,
+              "name": "AddressStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 487,
+              "src": "219:14:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AddressStorage_$487",
+                "typeString": "contract AddressStorage"
+              }
+            },
+            "id": 963,
+            "nodeType": "InheritanceSpecifier",
+            "src": "219:14:6"
+          }
+        ],
+        "contractDependencies": [
+          487,
+          1045,
+          1466
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1012,
+        "linearizedBaseContracts": [
+          1012,
+          487,
+          1045,
+          1466
+        ],
+        "name": "NetworkMetadataProvider",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 966,
+            "name": "BLOCKS_PER_YEAR",
+            "nodeType": "VariableDeclaration",
+            "scope": 1012,
+            "src": "241:60:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 964,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "241:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "424c4f434b535f5045525f59454152",
+              "id": 965,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "284:17:6",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_dd9795cff4312d9fffd0d2b8c06e31c1e80060161f168688c608c7f1d210d2fa",
+                "typeString": "literal_string \"BLOCKS_PER_YEAR\""
+              },
+              "value": "BLOCKS_PER_YEAR"
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": true,
+            "id": 969,
+            "name": "ETHEREUM_ADDRESS",
+            "nodeType": "VariableDeclaration",
+            "scope": 1012,
+            "src": "308:62:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 967,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "308:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "455448455245554d5f41444452455353",
+              "id": 968,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "352:18:6",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_f360571fa099fca7e2371ff8715a62086efce0e6eaeaeb308622cdf4ef44b8f2",
+                "typeString": "literal_string \"ETHEREUM_ADDRESS\""
+              },
+              "value": "ETHEREUM_ADDRESS"
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 978,
+              "nodeType": "Block",
+              "src": "439:50:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 975,
+                        "name": "BLOCKS_PER_YEAR",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 966,
+                        "src": "465:15:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 974,
+                      "name": "getUint",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1030,
+                      "src": "457:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_bytes32_$returns$_t_uint256_$",
+                        "typeString": "function (bytes32) view returns (uint256)"
+                      }
+                    },
+                    "id": 976,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "457:24:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 973,
+                  "id": 977,
+                  "nodeType": "Return",
+                  "src": "450:31:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 979,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBlocksPerYear",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 970,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "404:2:6"
+            },
+            "returnParameters": {
+              "id": 973,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 972,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 979,
+                  "src": "430:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 971,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "430:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "429:9:6"
+            },
+            "scope": 1012,
+            "src": "379:110:6",
+            "stateMutability": "view",
+            "superFunction": 1450,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 989,
+              "nodeType": "Block",
+              "src": "605:67:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 985,
+                        "name": "BLOCKS_PER_YEAR",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 966,
+                        "src": "632:15:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 986,
+                        "name": "_blocksPerYear",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 981,
+                        "src": "649:14:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 984,
+                      "name": "_setUint",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1044,
+                      "src": "623:8:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_uint256_$returns$__$",
+                        "typeString": "function (bytes32,uint256)"
+                      }
+                    },
+                    "id": 987,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "623:41:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "functionReturnParameters": 983,
+                  "id": 988,
+                  "nodeType": "Return",
+                  "src": "616:48:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 990,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setBlocksPerYear",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 982,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 981,
+                  "name": "_blocksPerYear",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 990,
+                  "src": "572:22:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 980,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "572:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "571:24:6"
+            },
+            "returnParameters": {
+              "id": 983,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "605:0:6"
+            },
+            "scope": 1012,
+            "src": "546:126:6",
+            "stateMutability": "nonpayable",
+            "superFunction": 1455,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 999,
+              "nodeType": "Block",
+              "src": "742:54:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 996,
+                        "name": "ETHEREUM_ADDRESS",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 969,
+                        "src": "771:16:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 995,
+                      "name": "getAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 472,
+                      "src": "760:10:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_bytes32_$returns$_t_address_$",
+                        "typeString": "function (bytes32) view returns (address)"
+                      }
+                    },
+                    "id": 997,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "760:28:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 994,
+                  "id": 998,
+                  "nodeType": "Return",
+                  "src": "753:35:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1000,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEthereumAddress",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 991,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "707:2:6"
+            },
+            "returnParameters": {
+              "id": 994,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 993,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1000,
+                  "src": "733:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 992,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "733:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "732:9:6"
+            },
+            "scope": 1012,
+            "src": "680:116:6",
+            "stateMutability": "view",
+            "superFunction": 1460,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 1010,
+              "nodeType": "Block",
+              "src": "916:73:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 1006,
+                        "name": "ETHEREUM_ADDRESS",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 969,
+                        "src": "946:16:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 1007,
+                        "name": "_ethereumAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1002,
+                        "src": "964:16:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 1005,
+                      "name": "_setAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 486,
+                      "src": "934:11:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
+                        "typeString": "function (bytes32,address)"
+                      }
+                    },
+                    "id": 1008,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "934:47:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "functionReturnParameters": 1004,
+                  "id": 1009,
+                  "nodeType": "Return",
+                  "src": "927:54:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1011,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setEthereumAddress",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1003,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1002,
+                  "name": "_ethereumAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1011,
+                  "src": "881:24:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1001,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "881:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "880:26:6"
+            },
+            "returnParameters": {
+              "id": 1004,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "916:0:6"
+            },
+            "scope": 1012,
+            "src": "853:136:6",
+            "stateMutability": "nonpayable",
+            "superFunction": 1465,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1013,
+        "src": "144:850:6"
+      }
+    ],
+    "src": "0:996:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.18",
+  "updatedAt": "2019-11-11T21:45:25.054Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
